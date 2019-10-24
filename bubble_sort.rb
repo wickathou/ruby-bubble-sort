@@ -36,6 +36,6 @@ end
 
 
 
-bubble_sort(["hi", "hello", "hey"]) do |left, right|
-    left.length + right.length
+bubble_sort(["hi", "hello", "hey",'thathahta','thath','thathahtaasaaaaaaaaaaaaaaaaaa']) do |left, right|
+    left.length - right.length
 end
