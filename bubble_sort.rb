@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 def bubble_sort(arr)
   ite = 0
   length = arr.size - 1
   while ite < length
-    for n in 0...length do
+    (0...length).each do |n|
       key = arr[n]
       if arr[n + 1] < arr[n]
         arr[n] = arr[n + 1]
@@ -20,15 +22,16 @@ def bubble_sort_by(arr)
   ite = 0
   length = arr.size - 1
   while ite < length
-    for n in 0...length do
-      arr[n], arr[n + 1] = arr[n + 1], arr[n] if yield(arr[n], arr[n + 1]).positive?
+    (0...length).each do |n|
+      if yield(arr[n], arr[n + 1]).positive?
+        arr[n], arr[n + 1] = arr[n + 1], arr[n]
+      end
     end
     ite += 1
   end
   puts arr
 end
 
-bubble_sort_by(%w(aaa aaaa aa)) do |a, b|
+bubble_sort_by(%w[aaa aaaa aa]) do |a, b|
   a.size - b.size
 end
-
