@@ -13,10 +13,10 @@ def bubble_sort(arr)
         end
         ite += 1
     end
-    puts arr
+    arr
 end
 
-bubble_sort([67,3,89,6,21,43])
+puts bubble_sort([67,3,89,6,21,43])
 
 def bubble_sort_by(arr)
     ite = 0
@@ -29,7 +29,7 @@ def bubble_sort_by(arr)
         ite += 1
         end
     end
-    puts arr
+    arr
 end
 
 bubble_sort_by(['a','aa','aaaa']) do |a, b|
