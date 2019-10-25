@@ -12,6 +12,7 @@ def bubble_sort(arr)
       end
     end
     arr
+  end
 end
 
 puts bubble_sort([67,3,89,6,21,43])
@@ -26,6 +27,7 @@ def bubble_sort_by(arr)
       end
     end
     arr
+  end
 end
 
 bubble_sort_by(%w[aaa aaaa aa]) do |a, b|
