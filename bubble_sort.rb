@@ -15,7 +15,7 @@ def bubble_sort(arr)
   end
 end
 
-puts bubble_sort([67,3,89,6,21,43])
+puts bubble_sort([67, 3, 89, 6, 21, 43])
 
 def bubble_sort_by(arr)
   ite = 0
