@@ -22,9 +22,7 @@ def bubble_sort_by(arr)
   length = arr.size - 1
   while ite < length
     (0...length).each do |n|
-      if yield(arr[n], arr[n + 1]).positive?
-        arr[n], arr[n + 1] = arr[n + 1], arr[n]
-      end
+      arr[n], arr[n + 1] = arr[n + 1], arr[n] if yield(arr[n], arr[n + 1]).positive?
     end
     arr
   end
