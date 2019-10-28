@@ -1,0 +1,14 @@
+
+I think we can solve by
+1) I declare a function
+2) I create a for loop through an array that comes as an parameter to the function
+3) That loop will do the following:
+    0) I declare a count variable with 0 as value
+    a) It will loop through each value of the array
+    b) The first index value is compared with the next index values checking their difference to see in what order they are
+    c) The value of the comparison determines the order direction
+    b) That value determines if we have to swap the position of the values compared in the array or not
+    e) If positions are swapped, count +=1
+    f) After that value is checked, if count = 0, break and return array. If count != 0, we repeat all steps from 0 to e on the next index position
+
+
